@@ -1,0 +1,8 @@
+The plan: duplicate my 8 week work cycle spreadsheet and add more functionality.
+
+Version 1 stretch goals:
+
+1. Duplicate exact spreadsheet layout
+2. Enable editable cells
+3. Auto add dates
+4. Enable strikethrough functionality for done items
