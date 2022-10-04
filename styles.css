@@ -15,10 +15,18 @@ body {
 
 .header,
 .dates,
-.content {
+.contents {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 1px;
+}
+
+.dates {
+    grid-area: dates;
+}
+
+.contents {
+    grid-area: content;
 }
 
 .header {
@@ -28,27 +36,44 @@ body {
 
 .week {
     grid-area: week;
-    background-color: white;
-    
+    color: black;
+    display: grid;
+    grid-template-rows: 20px 125px;
+    grid-template-areas: 
+        "dates"
+        "content";
+    gap: 1px;
 }
 
 .calendar {
     background-color: black;
     width: 80vw;
-    height: 300px;
+    height: 1180px;
     margin-top: 5vh;
     box-shadow: 0 0 4px rgb(182, 182, 182);
     display: grid;
-    grid-template-rows: 20px 120px;
+    grid-template-rows: 20px repeat(8, 145px);
     gap: 1px;
     grid-template-areas: 
         "header"
+        "week"
+        "week"
+        "week"
+        "week"
+        "week"
+        "week"
+        "week"
         "week";
     border: 1px solid black;
 }
 
 .header-day {
     background-color: #2862FF;
+}
+
+.dates>div,
+.contents>div {
+    background-color: white;
 }
 
 #sat,
@@ -62,3 +87,6 @@ body {
     justify-content: center;
 }
 
+.week-2 {
+    grid-row-start: 3;
+}
