@@ -2,7 +2,26 @@ The plan: duplicate my 8 week work cycle spreadsheet and add more functionality.
 
 Version 1 stretch goals:
 
-1. Duplicate exact spreadsheet layout
+1. Duplicate exact spreadsheet layout - DONE!
 2. Enable editable cells
 3. Auto add dates
 4. Enable strikethrough functionality for done items
+
+Structure:
+
+Body
+    Calendar - 1180px
+        Header - 20px
+        week - 145px
+            dates - 20px
+            contents - 125px
+        week
+        week
+        week
+        week
+        week
+        week
+        week
+
+TO-DO TOMORROW:
+    - Figure out how to put dates programmatically
