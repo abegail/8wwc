@@ -13,6 +13,74 @@ body {
     align-items: center;
 }
 
+.calendar {
+    background-color: black;
+    width: 80vw;
+    height: 1180px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    box-shadow: 0 0 8px rgb(182, 182, 182);
+    border-radius: 2.5px;
+    display: grid;
+    grid-template-rows: 20px repeat(8, 1fr);
+    gap: 1px;
+}
+
+.week {
+    display: grid;
+    grid-template-rows: 20px 1fr;
+    gap: 1px;
+
+}
+
+.header,
+.dates,
+.contents {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+}
+
+.dates>div,
+.contents>div {
+    background-color: white;
+}
+
+.header>div {
+    background-color: #2862FF;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.day.sun,
+.day.sat {
+    background-color: red;
+}
+
+.content.sun,
+.content.sat {
+    background-color: #FCE5CD;
+}
+
+.week-7 .date {
+    background-color: #FFE599;
+}
+
+.week-8 .date {
+    background-color: #B7D7A8;
+}
+
+/* THESE CLASSES ARE FOR TESTING ONLY AND WILL BE DELETED AFTER */
+
+
+
+
+
+
+/* 
+
 .header,
 .dates,
 .contents {
@@ -89,4 +157,4 @@ body {
 
 .week-2 {
     grid-row-start: 3;
-}
+}  */
