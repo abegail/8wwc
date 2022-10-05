@@ -4,7 +4,7 @@ Version 1 stretch goals:
 
 1. Duplicate exact spreadsheet layout - DONE!
 2. Enable editable cells
-3. Auto add dates
+3. Auto add dates - DONE!
 4. Enable strikethrough functionality for done items
 
 Structure:

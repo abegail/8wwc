@@ -16,13 +16,13 @@ body {
 .calendar {
     background-color: black;
     width: 80vw;
-    height: 1180px;
+    height: 1185px;
     margin-top: 5vh;
     margin-bottom: 5vh;
     box-shadow: 0 0 8px rgb(182, 182, 182);
     border-radius: 2.5px;
     display: grid;
-    grid-template-rows: 20px repeat(8, 1fr);
+    grid-template-rows: 25px repeat(8, 1fr);
     gap: 1px;
 }
 
@@ -74,6 +74,11 @@ body {
 
 .week-8 .date {
     background-color: #B7D7A8;
+}
+
+.header {
+    position: sticky;
+    top: 0;
 }
 
 /* THESE CLASSES ARE FOR TESTING ONLY AND WILL BE DELETED AFTER */
