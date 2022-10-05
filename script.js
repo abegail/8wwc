@@ -20,3 +20,22 @@ function getDatesInRange(startDate, endDate) {
 for(let i = 0; i < dates.length; i++) {
     dates[i].textContent = datesInRange[i];
 }
+
+
+
+const contentTest = document.getElementsByClassName('content');
+console.log(contentTest);
+
+for(let i=0; i<contentTest.length; i++) {
+  for(j=0; j<4; j++) {
+    let editableDiv = document.createElement('div');
+    editableDiv.classList.add('editable');
+    contentTest[i].appendChild(editableDiv);
+  }
+}
+
+const editableCells = document.getElementsByClassName('editable');
+
+for(let i=0; i<editableCells.length; i++) {
+  editableCells[i].setAttribute('contenteditable', 'true');
+}
