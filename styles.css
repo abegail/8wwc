@@ -15,7 +15,7 @@ body {
 
 .calendar {
     background-color: black;
-    width: 80vw;
+    width: clamp(846px, 80vw, 1400px);
     height: 1185px;
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -37,7 +37,7 @@ body {
 .dates,
 .contents {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(7, minmax(120px, 200px));
     gap: 1px;
 }
 
